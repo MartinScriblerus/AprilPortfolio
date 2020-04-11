@@ -32,8 +32,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 const drawerWidth = 240;
 
 const imageStyle = {
-  width:270,
-  height: 400,
+  width:350,
+  height: 350,
   paddingLeft: 0,
   float: "center",
   marginRight: 0,
@@ -56,7 +56,7 @@ toproot: {
    
     padding: 10,
     marginLeft: 150,
-    backgroundColor: "#6387A6",
+    backgroundColor: "#E13A41",
     marginLeft: 130
     
 },
@@ -68,7 +68,7 @@ toproot: {
    
     padding: 10,
     marginLeft: 130,
-    backgroundColor: "#6387A6",
+    backgroundColor: "#E13A41",
     marginLeft: 130
     
   },
@@ -78,7 +78,7 @@ toproot: {
 marginBottom: 15
   },
   title: {
-    marginLeft: 130,
+    marginLeft: 140,
     marginTop: 20,
     fontSize: 40,
     
@@ -131,33 +131,22 @@ function fetcher(url) {
 export default function Research() {
     const classes = useStyles();
 
-    const { data, error } = useSWR('/api/randomQuote', fetcher);
-    // The following line has optional chaining, added in Next.js v9.1.5,
-    // is the same as `data && data.author`
-    const author = data?.author;
-    let quote = data?.quote;
+    // const { data, error } = useSWR('/api/randomQuote', fetcher);
+    // // The following line has optional chaining, added in Next.js v9.1.5,
+    // // is the same as `data && data.author`
+    // const author = data?.author;
+    // let quote = data?.quote;
 
-    if (!data) quote = 'Loading...';
-    if (error) quote = 'Failed to fetch the quote.';
+    // if (!data) quote = 'Loading...';
+    // if (error) quote = 'Failed to fetch the quote.';
 
 
   return (
   
 
  <div className="publications">  
-    <img className="photo"
-    src={ECSImage} 
-    style={imageStyle}
-    />
-    <img className="photo"
-    src={MPImage} 
-    style={imageStyle}
-    />
-    <img className="photo"
-    src={ECFImage} 
-    style={imageStyle}
-    />
-    <div className="shiftdivabout">
+
+    <div className="shiftdivresearch">
  
 
       <h1

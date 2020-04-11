@@ -42,16 +42,20 @@ h1 {
   .shiftdivabout {
     margin-left: 80px;
   }
+  .shiftdivresearch {
+    margin-left: 80px;
+  }
+  .shiftdivdevelopment {
+    margin-left: 200px;
+  }
   .bio {
     padding: 20px;
     margin-top: 0px;
     margin-left: 110px;
     font-size: 26px;
     color: #1E2732;
-
- 
-
   }
+  
   .photo{
     float: right;
     margin-top: 30px;

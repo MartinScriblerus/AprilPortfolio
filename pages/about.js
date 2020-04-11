@@ -33,11 +33,11 @@ import Toolbar from '@material-ui/core/Toolbar';
 const drawerWidth = 240;
 
 const imageStyle = {
-  width:470,
+  width:550,
   paddingLeft: 50,
   float: "right",
   marginRight: 0,
-  marginLeft: 310
+  marginLeft: 20
 };
 
 const backImage = require('../public/IMG_0341.png');
@@ -119,14 +119,14 @@ function fetcher(url) {
 export default function About() {
     const classes = useStyles();
 
-    const { data, error } = useSWR('/api/randomQuote', fetcher);
-    // The following line has optional chaining, added in Next.js v9.1.5,
-    // is the same as `data && data.author`
-    const author = data?.author;
-    let quote = data?.quote;
+    // const { data, error } = useSWR('/api/randomQuote', fetcher);
+    // // The following line has optional chaining, added in Next.js v9.1.5,
+    // // is the same as `data && data.author`
+    // const author = data?.author;
+    // let quote = data?.quote;
 
-    if (!data) quote = 'Loading...';
-    if (error) quote = 'Failed to fetch the quote.';
+    // if (!data) quote = 'Loading...';
+    // if (error) quote = 'Failed to fetch the quote.';
 
 
   return (
