@@ -1,24 +1,26 @@
 import Link from 'next/link';
 
 const linkStyle = {
-  marginRight: 15,
-  fontSize: 24
+  fontFamily: 'Helvetica Neue',
+  marginRight: 25,
+  fontSize: 24,
 };
 
 const Header = () => (
-  <div>
+  <div  className="sidenav">
     <Link href="/">
       <a style={linkStyle}>Home</a>
     </Link>
     <style jsx>{`
     li {
       list-style: none;
-      margin: 5px 0;
+     
+
     }
 
     a {
       text-decoration: none;
-      color: blue;
+     
       font-family: 'Helvetica';
     }
 
@@ -39,8 +41,6 @@ const Header = () => (
     <Link href="/Creative">
       <a style={linkStyle}>Creative</a>
     </Link>
-    
-
     
   </div>
 );

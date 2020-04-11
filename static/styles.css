@@ -1,9 +1,92 @@
 body {
     font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
       'Arial', sans-serif;
-    padding: 20px 20px 60px;
-    max-width: 680px;
+  
+    max-width: 100%;
     margin: 0 auto;
-    background-color: "pink";
+    background-color: "#5f4b8b";
     background: 'url(/static/IMG.png) no-repeat center center scroll'
   }
+
+h1 {
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+  'Arial', sans-serif;
+  font-size: 32px;
+}
+
+  .sidenav {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+   background-color: #6387A6;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-right: 2px solid #5f4b8b;
+    
+  }
+
+  .sidenav a {
+    padding: 40px 0px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    
+  }
+
+  .shiftdiv {
+    margin-left: 180px;
+    
+    
+  }
+  .bio {
+    padding: 20px;
+    margin-top: 250px;
+    margin-left: 50px;
+    font-size: 26px;
+
+  }
+  .photo{
+    float: right;
+    margin-top: 30px;
+    
+  }
+
+
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .shiftdiv {
+    background: #027353;
+  };
+ .bio {
+   font-size: 18px;
+ };
+ .photo {
+  size: 1000px;
+  margin-top: 30px;
+ }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {background-color: green;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
+}
