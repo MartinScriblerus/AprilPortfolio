@@ -1,7 +1,9 @@
 import Layout from './components/MyLayout';
 import Link from 'next/link';
 import useSWR from 'swr';
+import BottomNavigation from '@material-ui/core/BottomNavigation';
 import MyAppStyles from './_app'
+import { SocialIcon } from 'react-social-icons';
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -31,7 +33,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 const drawerWidth = 240;
 
 const imageStyle = {
-  width:470,
+  width:940,
   paddingLeft: 50,
   float: "right",
   marginRight: 0,
@@ -47,6 +49,7 @@ const useStyles = makeStyles(theme => ({
     paddingTop: 5,
     color: '#1E2732'
   },
+ 
   title: {
     marginLeft: 60
   },
@@ -58,6 +61,9 @@ const useStyles = makeStyles(theme => ({
     display: 'inline',
     width: '100%',
     maxHeight: '100%',
+  },
+  footer :{
+    backgroundColor: '#0d0d0d',
   },
   drawer: {
     [theme.breakpoints.up('sm')]: {
@@ -116,22 +122,31 @@ export default function Blog() {
   
     <div className="shiftdiv">
       <div className={classes.root}>
-      <h1
+      <Typography variant="h1"
       className={classes.title}
-      >Matt Reilly</h1>
+      >Matt Reilly</Typography>
       </div>
-    <Layout >
+      <Layout >
     <div>
     <img className="photo"
     src={backImage} 
     style={imageStyle}
     />
+    <div>
+    <h1 
+    className="bio"
+    > I'm a writer, web developer, teacher, and musician from Austin, TX.</h1>    
     </div>
+    </div>
+    
       </Layout>
-      <h1 
-      className="bio"
-      > I'm a writer, developer, teacher, and musician from Austin, TX.</h1>    
-
-    </div>
+ 
+      <BottomNavigation className={classes.footer}>
+      <SocialIcon className={classes.root} url="https://www.linkedin.com/in/matthew-reilly-91b316142/"/>
+      <SocialIcon className={classes.root} url="https://twitter.com/A00PE"/>
+      <SocialIcon className={classes.root} url="https://github.com/MartinScriblerus"/>
+      </BottomNavigation>
+      </div>
+    
       );
 }

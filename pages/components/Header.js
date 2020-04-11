@@ -42,8 +42,8 @@ const Header = () => (
     <Link href="/Creative">
       <a style={linkStyle}>Creative</a>
     </Link>
-    
   </div>
+  
 );
 
 export default Header;
