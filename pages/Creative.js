@@ -155,7 +155,7 @@ style={imageStyle}
 <br/>
 <div className={classes.links}>
 </div>
-<h2><Link href="https://dustedmagazine.tumblr.com/post/189649991247/dusteds-decade-picks-the-lists">Dusted Magazine 2010 Picks</Link></h2>
+<h2><Link href="https://dustedmagazine.tumblr.com/post/189649991247/dusteds-decade-picks-the-lists">Dusted Magazine 2010s Decade Picks</Link></h2>
 <h2><Link href="https://www.imdb.com/name/nm7138532/">Hidden Ritual IMDB</Link></h2>
 
 
