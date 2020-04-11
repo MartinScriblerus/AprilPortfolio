@@ -4,21 +4,19 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Header from './Header';
 
-const backImage = require('../../public/IMG.png');
 
 const useStyles = makeStyles(theme => ({
   root: {
  
     flexGrow: 1,
     fontSize: 30,
-    backgroundColor: "#6387A6",
+    backgroundColor: "#8AB5B3",
     marginLeft: 200
   },
   img: {
     margin: 'auto',
     display: 'inline',
-    maxWidth: '10%',
-    maxHeight: '50%',
+
   },
   drawer: {
     [theme.breakpoints.up('sm')]: {
@@ -53,13 +51,13 @@ const useStyles = makeStyles(theme => ({
 const layoutStyle = {
   margin: 0,
   padding: 0,
-  border: '2px solid #5f4b8b',
+  // border: '2px solid #8AB5B3',
 
 };
 
 const imageStyle = {
-  width:430,
-  paddingLeft: 100,
+  width:470,
+  paddingLeft: 50,
   float: "right",
   marginRight: 0,
   marginLeft: 310
@@ -73,17 +71,10 @@ const Layout = props => (
     {props.children}
  
    
-      <div>
-      <img className="photo"
-      src={backImage} 
-      style={imageStyle}
-      />
-      </div>
+ 
 
     </div>
-    <h1 
-    className="bio"
-    > I'm a writer, developer, teacher, and musician from Austin, TX.</h1>
+
   </div>
 );
 

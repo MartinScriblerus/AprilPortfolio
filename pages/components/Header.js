@@ -3,6 +3,7 @@ import Link from 'next/link';
 const linkStyle = {
   fontFamily: 'Helvetica Neue',
   marginRight: 25,
+  color: '#f2f2f2',
   fontSize: 24,
 };
 

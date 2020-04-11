@@ -30,10 +30,28 @@ import Toolbar from '@material-ui/core/Toolbar';
 
 const drawerWidth = 240;
 
+const imageStyle = {
+  width:470,
+  paddingLeft: 50,
+  float: "right",
+  marginRight: 0,
+  marginLeft: 310
+};
+
+const backImage = require('../public/IMG.png');
+
 
 const useStyles = makeStyles(theme => ({
   root: {
-    marginLeft: 30,
+    marginLeft: 130,
+    paddingTop: 5,
+    color: '#1E2732'
+  },
+  title: {
+    marginLeft: 60
+  },
+  qtn: {
+    marginLeft: 130
   },
   img: {
     margin: 'auto',
@@ -67,6 +85,7 @@ const useStyles = makeStyles(theme => ({
   content: {
     flexGrow: 1,
     padding: theme.spacing(3),
+   
   },
 
 }),
@@ -97,16 +116,23 @@ export default function Blog() {
   
     <div className="shiftdiv">
       <div className={classes.root}>
-      <Typography 
-      variant="h1"
-      >Matt Reilly</Typography>
+      <h1
+      className={classes.title}
+      >Matt Reilly</h1>
       </div>
     <Layout >
-
+    <div>
+    <img className="photo"
+    src={backImage} 
+    style={imageStyle}
+    />
+    </div>
       </Layout>
-           
-    <div className="quote">{quote}</div>
-    {author && <span className="author">- {author}</span>}
+      <h1 
+      className="bio"
+      > I'm a writer, developer, teacher, and musician from Austin, TX.</h1>    
+    <div className={classes.qtn}>{quote}</div>
+    {author && <span className={classes.qtn}>- {author}</span>}
     
     </div>
       );

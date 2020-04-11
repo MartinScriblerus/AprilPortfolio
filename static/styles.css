@@ -11,7 +11,7 @@ body {
 h1 {
   font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
   'Arial', sans-serif;
-  font-size: 32px;
+  font-size: 52px;
 }
 
   .sidenav {
@@ -21,32 +21,35 @@ h1 {
     z-index: 1;
     top: 0;
     left: 0;
-   background-color: #6387A6;
+   background-color: #0d0d0d;
     overflow-x: hidden;
     padding-top: 20px;
-    border-right: 2px solid #5f4b8b;
-    
+    border-right: 2px solid #8AB5B3;
   }
 
   .sidenav a {
-    padding: 40px 0px 6px 16px;
+    padding: 50px 0px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #fff;
+    color: #f2f2f2;
     display: block;
     
   }
 
   .shiftdiv {
-    margin-left: 180px;
-    
-    
+    margin-left: 80px;
+  }
+  .shiftdivabout {
+    margin-left: 80px;
   }
   .bio {
     padding: 20px;
-    margin-top: 250px;
-    margin-left: 50px;
+    margin-top: 0px;
+    margin-left: 110px;
     font-size: 26px;
+    color: #1E2732;
+
+ 
 
   }
   .photo{
@@ -60,33 +63,69 @@ h1 {
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .shiftdiv {
-    background: #027353;
+    background: #1E2732;
+    color: #1E2732;
   };
  .bio {
    font-size: 18px;
+   margin-left: 130px;
+   background-color: #6387A6
  };
  .photo {
-  size: 1000px;
+  size: 1200px;
   margin-top: 30px;
- }
+ };
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .example {background-color: green;}
+  
+
+  .shiftdiv {
+    background: #8AB5B3;
+    color: #1E2732;
+  };
+  .shiftdivabout {
+    background:   #6387A6;
+    color: #1E2732;
+  };
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .example {background: blue;}
+  .shiftdiv {
+    background: #8AB5B3;
+    color: #1E2732;
+  };
+  .shiftdivabout {
+    background:   #6387A6;
+    color: #1E2732;
+  };
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .example {background: orange;}
+  .shiftdiv {
+    background: #8AB5B3;
+    color: #1E2732;
+  };
+  .shiftdivabout {
+    background:   #6387A6;
+    color: #1E2732;
+  };
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .example {background: pink;}
+  .shiftdiv {
+    background: #8AB5B3;
+    color: #1E2732;
+  };
+  .shiftdivabout {
+    background:   #6387A6;
+    color: #1E2732;
+  };
+  .publications {
+    padding: 2
+  }
 }
