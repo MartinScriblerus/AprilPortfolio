@@ -43,22 +43,17 @@ const imageStyle = {
 const ECSImage = require('../public/ECS_Cover.png');
 const MPImage = require('../public/ECF_Cover.jpeg');
 const ECFImage = require('../public/MP_Cover.jpeg');
-// const backImage = require('../public/IMG_0341.png');
-// const backImage = require('../public/IMG_0341.png');
-
 
 const useStyles = makeStyles(theme => ({
-toproot: {
-    marginTop: 20,
-    flexGrow: 1,
-    fontSize: 20,
-    paddingRight: 20,
-   
-    padding: 10,
-    marginLeft: 150,
-    backgroundColor: "#E13A41",
-    marginLeft: 130
-    
+  toproot: {
+      marginTop: 20,
+      flexGrow: 1,
+      fontSize: 20,
+      paddingRight: 20,
+      padding: 10,
+      marginLeft: 150,
+      backgroundColor: "#A69E94",
+      marginLeft: 130
 },
   root: {
  
@@ -68,7 +63,7 @@ toproot: {
    
     padding: 10,
     marginLeft: 130,
-    backgroundColor: "#E13A41",
+    backgroundColor: "#A69E94",
     marginLeft: 130
     
   },
@@ -116,48 +111,22 @@ marginBottom: 15
     padding: theme.spacing(3),
 
   },
-
 }),
-
 );
-
-
-function fetcher(url) { 
-  return fetch(url).then(r => r.json());
-
-}
-
 
 export default function Research() {
     const classes = useStyles();
 
-    // const { data, error } = useSWR('/api/randomQuote', fetcher);
-    // // The following line has optional chaining, added in Next.js v9.1.5,
-    // // is the same as `data && data.author`
-    // const author = data?.author;
-    // let quote = data?.quote;
-
-    // if (!data) quote = 'Loading...';
-    // if (error) quote = 'Failed to fetch the quote.';
-
-
   return (
-  
-
- <div className="publications">  
-
-    <div className="shiftdivresearch">
- 
+  <div className="shiftdiv">
 
       <h1
-      className={classes.title}
+    
       >Selected Research</h1>
     
- 
-   
-   
+
        <p className={classes.toproot}> 
-      Double Agent: Alexander Pope and the Afterlives of Scriblerian Satire (under review / forthcoming book)</p>
+      Double Agent: Alexander Pope and the Afterlives of Scriblerian Satire (book currently under review)</p>
        <p className={classes.root}> 
       “The Life and Literary Fictions of May Drummond, Quaker Female Preacher.” Eighteenth-Century 
       Fiction, 28.2 (2016): 287–312.</p>
@@ -175,7 +144,7 @@ export default function Research() {
 
       </Layout>
   
-</div>
+
 </div>
       );
 }
