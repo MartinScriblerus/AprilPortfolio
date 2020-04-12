@@ -65,6 +65,9 @@ const useStyles = makeStyles(theme => ({
   footer :{
     backgroundColor: '#0d0d0d',
   },
+  MuiBottomNavigation: {
+    backgroundColor: '#0d0d0d',
+  },
   drawer: {
     [theme.breakpoints.up('sm')]: {
       width: drawerWidth,
@@ -123,7 +126,7 @@ export default function Blog() {
     <div className="shiftdiv">
       <div className={classes.root}>
       <Typography variant="h1"
-      className="title"
+      className="shiftdiv"
       >Matt Reilly</Typography>
       </div>
       <Layout >
