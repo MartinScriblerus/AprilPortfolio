@@ -51,7 +51,7 @@ const useStyles = makeStyles(theme => ({
   },
  
   title: {
-    marginLeft: 60
+    marginLeft: 100
   },
   qtn: {
     marginLeft: 130
