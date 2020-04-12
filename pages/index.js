@@ -45,7 +45,7 @@ const backImage = require('../public/IMG.png');
 
 const useStyles = makeStyles(theme => ({
   root: {
-    marginLeft: 130,
+    marginLeft: 180,
     paddingTop: 5,
     color: '#1E2732'
   },
