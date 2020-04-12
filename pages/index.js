@@ -123,7 +123,7 @@ export default function Blog() {
     <div className="shiftdiv">
       <div className={classes.root}>
       <Typography variant="h1"
-      className={classes.title}
+      className="title"
       >Matt Reilly</Typography>
       </div>
       <Layout >
