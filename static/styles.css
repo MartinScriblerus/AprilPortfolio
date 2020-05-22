@@ -1,129 +1,202 @@
 body {
     font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
       'Arial', sans-serif;
-  
+color: "#aaf";
     max-width: 100%;
+    height: '100vm';
     margin: 0 auto;
-    background-color: "#5f4b8b";
-    background: 'url(/static/IMG.png) no-repeat center center scroll'
+    color: "#aaf";
+ 
   }
 
+  p {
+width: 50%;
+  }
+
+.__next {
+  color: "#aaf";
+  background-color: "#aaf"
+}
+  
 h1 {
   font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
   'Arial', sans-serif;
-  font-size: 52px;
+  font-size: 24px;
+  width: 60%;
+  margin-right: 30px;
+  background-color: "#aaf"
 }
 
   .sidenav {
     height: 100%;
-    width: 180px;
+    width: 400;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    right: 0;
+    padding-right: 20px;
+    padding-left: 10px;
    background-color: #0d0d0d;
+
     overflow-x: hidden;
-    padding-top: 20px;
+ 
     /* border-right: 2px solid #8AB5B3; */
   }
 
 .socialIcon {
-  height:10;
+  height:0;
   width: 10;
-  background-color: #0d0d0d;
+  margin-right: 10px;
+  margin-left: 10px; 
+
 }
-.title {
-  margin-left: 200px
-}
+
   .sidenav a {
-    padding: 50px 0px 6px 16px;
+    margin-top: 50px;
+    padding: 10px 0px 0px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #f2f2f2;
-    display: block;
-    
+    color: #aaf;
+    display: flex;
   }
 
-  .shiftdiv {
-    margin-left: 180px;
+  li {
+    list-style: none;
+   
+
   }
+
+  a {
+    text-decoration: none;
+
+    font-family: 'Helvetica';
+  }
+
+  a:hover {
+    opacity: 0.6;
+
+
+
+    }
+
+
+
+
   .shiftdivabout {
-    margin-left: 130px;
+    width:50%;
+   color: #030303;
+    margin-left: 10%;
+    line-height: 1.5;
+    color: "#aaf"
   }
   .shiftdivresearch {
-    margin-left: 180px;
+    width: 50%;
+
+    margin-left: 10%;
+    line-height: 1.5;
   }
   .shiftdivdevelopment {
-    margin-left: 200px;
+    width:70%;
+
+    line-height: 1.5;
   }
   .bio {
     padding: 20px;
     margin-top: 0px;
-    margin-left: 10px;
+    margin-right: 10px;
     font-size: 26px;
     color: #1E2732;
+    width: 30%
   }
-  
+  h4 {
+    padding: 20px;
+  } 
   .photo{
     float: right;
-    margin-top: 30px;
-    
+    margin-top: 10px;
+    width: 100%;
   }
 
 
 
   /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 400px) {
   .shiftdiv {
-    background: #1E2732;
-    color: #1E2732;
+    background-color: #aaf0d1;
+    color: #1e2732;
+    background-color: "#aaf"
   };
+  h1 {
+    width: 70%;
+    font-size: 18px
+  }
+  .miniBio {
+    color: #aaf;
+    background-color: "#aaf"
+  }
+
  .bio {
    font-size: 18px;
-   margin-left: 130px;
-   background-color: #6387A6
+   padding-left: 30px;
+   width: 40%;
+   margin-left: 15px;
  };
  .photo {
-  size: 1200px;
+  size: 800px;
   margin-top: 30px;
  };
+ .sidenav a {
+  padding: 50px 0px 0px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #aaf;
+  display: flex;
+}
+
 }
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   
-
   .shiftdiv {
-    background: #8AB5B3;
-    color: #1E2732;
+   color: #aaf0d1;
+   background-color: "#aaf";
+    font-size: 18px;
+    width:100%
   };
   .shiftdivabout {
-    background:   #6387A6;
-    color: #1E2732;
+    background-color:   #aaf0d1;
+
   };
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .shiftdiv {
-    background: #8AB5B3;
-    color: #1E2732;
+    background-color: #aaf0d1;
+    color: #aaf0d1;
+    color: #1e2732;
+    font-size: 18px
   };
   .shiftdivabout {
-    background:   #6387A6;
+    background-color:   #aaf0d1;
+
     color: #1E2732;
   };
+  .sidena a {
+    background-color: "#aaf0d1"
+  }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .shiftdiv {
-    background: #8AB5B3;
+    background-color: #aaf0d1;
     color: #1E2732;
   };
   .shiftdivabout {
-    background:   #6387A6;
+    background-color:   #aaf0d1;
     color: #1E2732;
   };
 } 
@@ -131,11 +204,11 @@ h1 {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .shiftdiv {
-    background: #8AB5B3;
+    background-color: #aaf0d1;
     color: #1E2732;
   };
   .shiftdivabout {
-    background:   #6387A6;
+    background-color:   #aaf0d1;
     color: #1E2732;
   };
   .publications {

@@ -9,8 +9,8 @@ const useStyles = makeStyles(theme => ({
   root: {
  
     flexGrow: 1,
-    fontSize: 30,
-    backgroundColor: "#8AB5B3",
+    fontSize: 20,
+    backgroundColor: "#aaf0d1",
     marginLeft: 200
   },
   img: {
@@ -66,14 +66,13 @@ const imageStyle = {
 const Layout = props => (
   
   <div style={layoutStyle}>
-  <div className="shiftdiv">
+
   <Header />
     {props.children}
  
    
  
 
-    </div>
 
   </div>
 );

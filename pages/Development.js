@@ -39,8 +39,8 @@ const imageStyle = {
   marginRight: 0,
   marginLeft: 0
 };
-
-const PraxImage = require('../public/Prax.png');
+const PraxImage = require('../public/Prax.png')
+const VitalImage = require('../public/VitalSysScreenshot.png')
 const SpotImage = require('../public/Spot.png');
 const SlideImage = require('../public/SlideCast.png');
 // const backImage = require('../public/IMG_0341.png');
@@ -122,10 +122,7 @@ marginBottom: 15
 );
 
 
-function fetcher(url) { 
-  return fetch(url).then(r => r.json());
 
-}
 
 
 export default function Research() {
@@ -134,48 +131,44 @@ export default function Research() {
 
 
   return (
-  
-<div className="shiftdivdevelopment">
+  <>
 
 
-  <td>
+<img className="photo"
+src={VitalImage} 
+style={imageStyle}
+/>
+
+<Link href="//vital-sys.s3-website.us-east-2.amazonaws.com/"><a><h2>Spotify Genre Map: Track Listeners Worldwide</h2></a></Link>
+
     <img className="photo"
     src={SlideImage} 
     style={imageStyle}
     />
-  </td>
-  <Link href="https://polar-caverns-23158.herokuapp.com/">  SlideCast: Voice-Activated Presentations
-</Link>
+ 
+  <Link href="//polar-caverns-23158.herokuapp.com/"><a><h2>SlideCast: Voice-Activated Presentations</h2></a></Link>
   
-
-
-
-  <td>
+  
     <img className="photo"
     src={SpotImage} 
     style={imageStyle}
     />
-  </td>
-  <Link href="https://project-2-spotify.herokuapp.com/">Spotify Genre Map: Track Listeners Worldwide
-</Link>
+
+  <Link href="//project-2-spotify.herokuapp.com/"><a><h2>Spotify Genre Map: Track Listeners Worldwide</h2></a></Link>
 
 
-  <td>
+
     <img className="photo"
-    src={PraxImage} 
+    src={PraxImage}
     style={imageStyle}
     />
-  </td>
-  <tr>Prax: A Tool for Remote Musicians (forthcoming)
-</tr>
+  
+  <Link href="//github.com/MartinScriblerus/Prax"><a><h2>Prax: A Tool for Remote Musicians (forthcoming)</h2></a></Link> 
 
 
 
-<Layout >
+</>
 
-
-</Layout>
-</div>
 
 
  

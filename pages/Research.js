@@ -52,15 +52,17 @@ const useStyles = makeStyles(theme => ({
       paddingRight: 20,
       padding: 10,
       marginLeft: 150,
-      backgroundColor: "#A69E94",
+  
       marginLeft: 130
 },
+
+
   root: {
  
     flexGrow: 1,
     fontSize: 20,
     paddingRight: 20,
-   
+
     padding: 10,
     marginLeft: 130,
     backgroundColor: "#A69E94",
@@ -106,6 +108,9 @@ marginBottom: 15
   drawerPaper: {
     width: drawerWidth,
   },
+  frame: {
+    marginLeft: 50
+  },
   content: {
     flexGrow: 1,
     padding: theme.spacing(3),
@@ -118,28 +123,30 @@ export default function Research() {
     const classes = useStyles();
 
   return (
-  <div className="shiftdiv">
-
+  <div className={classes.frame}>
+<div>
       <h1
     
       >Selected Research</h1>
     
-
-       <p className={classes.toproot}> 
+<div>
+       <p > 
       Double Agent: Alexander Pope and the Afterlives of Scriblerian Satire (book currently under review)</p>
-       <p className={classes.root}> 
+       <p > 
       “The Life and Literary Fictions of May Drummond, Quaker Female Preacher.” Eighteenth-Century 
       Fiction, 28.2 (2016): 287–312.</p>
-      <p className={classes.root}> 
+      <p > 
       “Byron’s Babel: Scriblerian Orientalism and the Romantic-Era Pope Controversy.” Modern Philology, 
       113.2 (2015): 224–45.</p> 
-      <p className={classes.root}> 
+      <p> 
       “‘No Eye has seen nor Ear has heard’: Arabic Sources for Quaker Subjectivity in Unca Eliza 
       Winkfield’s The Female American.” Eighteenth-Century Studies, 44.2 (2011): 261–85. 
      </p> 
-    <p className={classes.root}> 
+    <p > 
     Within's Wonderscope App Offers a Portal to Educational AR via Clio's Cosmic Quest Game. Next Reality (September 9 2019)
     </p> 
+    </div>
+    </div>
      <Layout >
 
       </Layout>

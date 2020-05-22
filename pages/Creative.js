@@ -66,10 +66,14 @@ backgroundColor: '#0d0d0d'
     paddingRight: 20,
    
     padding: 10,
-    marginLeft: 130,
+    marginLeft: 30,
     backgroundColor: "#6387A6",
     marginLeft: 130
     
+  },
+  h4: {
+margin: 10,
+width: '80%'
   },
   img: {
     margin: 'auto',
@@ -134,9 +138,9 @@ export default function Research() {
 <div className="shiftdivdevelopment">
 
 
-  <td>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Kidx4Fhj86Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </td>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Kidx4Fhj86Q" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
 
   
   <img className="photo"
@@ -144,19 +148,19 @@ export default function Research() {
   style={imageStyle}
   />
 
-<h4>Doug Mosurock Review of Hidden Ritual <i>Always</i></h4>
-  <p>With a lingering fear of stagnation in modern music that no amount of millennial whoops can paper over, it’s often those who can best reconfigure the existing pieces and parts of genres and histories that find the most original take on things. Austin’s Hidden Ritual performs this feat with ease on their second album Always. They take minimal, strummy, percussive post-punk (think the Feelies ca. Crazy Rhythms) and couch it in a murky, yet very carefully-filtered environment of reverb, synths, lounge motifs, and stock-still vocalese reminiscent of Ian Curtis or Ian McCullouch. The result is driving yet muted, combining the most effective parts of ‘50s/’60s sleepwalk pop gloom, the malaise of early Felt, Velvets-y strum, and disciplined mope – imagine Broadcast writing a new arrangement to the Chills’ “Pink Frost,” perhaps, and you’re getting warm. I’m sure you could throw another two dozen or so references against Always, and there’d be reason enough for them to stick. Hidden Ritual’s sound of now fits in remarkably well with the season of uncertainty in which we currently walk each day, as well as the decay of autumn and the lengthening of nights as the year inches towards a close. The second half of the record finds the group in more mood-inspiring, soundtrack-ish terrain. There’s not a lot going on in music as specific and put-together as Hidden Ritual right now, and the careful, by-the-numbers way in which they assemble these songs is likely to chafe a select few, but those folks were probably looking for something to hate anyway. It’s hard not to imagine this band taking off in some capacity, as they tick a lot of the boxes that make people seek out this sort of thing. Here’s to seeing where they go next, and to getting well lost in where they are now. (http://www.monofonuspress.com)
-</p>
+<h3 >Doug Mosurock Review of Hidden Ritual <i>Always</i></h3>
+  <h4 >With a lingering fear of stagnation in modern music that no amount of millennial whoops can paper over, it’s often those who can best reconfigure the existing pieces and parts of genres and histories that find the most original take on things. Austin’s Hidden Ritual performs this feat with ease on their second album Always. They take minimal, strummy, percussive post-punk (think the Feelies ca. Crazy Rhythms) and couch it in a murky, yet very carefully-filtered environment of reverb, synths, lounge motifs, and stock-still vocalese reminiscent of Ian Curtis or Ian McCullouch. The result is driving yet muted, combining the most effective parts of ‘50s/’60s sleepwalk pop gloom, the malaise of early Felt, Velvets-y strum, and disciplined mope – imagine Broadcast writing a new arrangement to the Chills’ “Pink Frost,” perhaps, and you’re getting warm. I’m sure you could throw another two dozen or so references against Always, and there’d be reason enough for them to stick. Hidden Ritual’s sound of now fits in remarkably well with the season of uncertainty in which we currently walk each day, as well as the decay of autumn and the lengthening of nights as the year inches towards a close. The second half of the record finds the group in more mood-inspiring, soundtrack-ish terrain. There’s not a lot going on in music as specific and put-together as Hidden Ritual right now, and the careful, by-the-numbers way in which they assemble these songs is likely to chafe a select few, but those folks were probably looking for something to hate anyway. It’s hard not to imagine this band taking off in some capacity, as they tick a lot of the boxes that make people seek out this sort of thing. Here’s to seeing where they go next, and to getting well lost in where they are now. (http://www.monofonuspress.com)
+</h4>
 
 <img className="photo"
 src={ZebraImage} 
 style={imageStyle}
 />
 <br/>
-<div className={classes.links}>
+<div>
 </div>
-<h2><Link href="https://dustedmagazine.tumblr.com/post/189649991247/dusteds-decade-picks-the-lists">Dusted Magazine 2010s Decade Picks</Link></h2>
-<h2><Link href="https://www.imdb.com/name/nm7138532/">Hidden Ritual IMDB</Link></h2>
+<Link href="//dustedmagazine.tumblr.com/post/189649991247/dusteds-decade-picks-the-lists"><a>Dusted Magazine 2010s Decade Picks</a></Link>
+<Link href="//www.imdb.com/name/nm7138532/"><a>IMDB</a></Link>
 
 
 

@@ -1,46 +1,38 @@
 import Link from 'next/link';
+import { SocialIcon } from 'react-social-icons';
 
-const linkStyle = {
-  fontFamily: 'Helvetica Neue',
-  marginRight: 25,
-  color: '#f2f2f2',
-  fontSize: 24,
-};
+const styles={
+  
+    icon: {
+      color: '#aaf0d1',
+     
+     alignText: 'center'
+    },
+  
+}
 
 const Header = () => (
   <div  className="sidenav">
+ 
+<SocialIcon style={styles.icon} url="https://www.linkedin.com/in/matthew-reilly-91b316142/"/>
+<SocialIcon  style={styles.icon} url="https://twitter.com/A00PE"/>
+<SocialIcon style={styles.icon} url="https://github.com/MartinScriblerus"/>
+
     <Link href="/">
-      <a style={linkStyle}>Home</a>
+      <a>Home</a>
     </Link>
-    <style jsx>{`
-    li {
-      list-style: none;
-     
 
-    }
-
-    a {
-      text-decoration: none;
-     
-      font-family: 'Helvetica';
-    }
-
-    a:hover {
-      opacity: 0.6;
-
-    }
-  `}</style>
     <Link href="/about">
-      <a style={linkStyle}>About</a>
+      <a>About</a>
     </Link>
     <Link href="/Research">
-      <a style={linkStyle}>Research</a>
+      <a>Research</a>
     </Link>
     <Link href="/Development">
-      <a style={linkStyle}>Development</a>
+      <a>Development</a>
     </Link>
     <Link href="/Creative">
-      <a style={linkStyle}>Creative</a>
+      <a>Creative</a>
     </Link>
   </div>
   
