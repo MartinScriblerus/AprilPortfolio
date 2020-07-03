@@ -12,33 +12,34 @@ import Typography from '@material-ui/core/Typography';
 import Link from 'next/link';
 
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: '100%',
-    maxWidth: '80%',
-    marginRight: '10%',
-    marginLeft: '10%',
-    borderStyle: 'solid',
-    borderColor: '#148aa3',
-    borderWidth: '2px',
-    backgroundColor: '#212121',
-    color: '#f6f6f6',
-    fontSize: '26px',
-  },
-  h2: {
-    color: '#ee7e5b'
-  },
-  dividerFullWidth: {
-    margin: `5px 0 0 ${theme.spacing(2)}px`,
-    color: '#eed55b',
-    fontSize: '16px',
-    marginLeft: '13%',
-    marginRight: '13%'
-  },
-  dividerInset: {
-    margin: `5px 0 0 ${theme.spacing(9)}px`,
-  },
-}));
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     width: '100%',
+//     maxWidth: '80%',
+//     marginRight: '10%',
+//     marginLeft: '10%',
+//     marginTop: '5%',
+//     borderStyle: 'solid',
+//     borderColor: '#ee7e5b',
+//     borderWidth: '2px',
+//     backgroundColor: '#212121',
+//     color: '#f6f6f6',
+//     fontSize: '26px',
+//   },
+//   h2: {
+//     color: '#148aa3'
+//   },
+//   dividerFullWidth: {
+//     margin: `15px 0 0 ${theme.spacing(2)}px`,
+//     color: '#eed55b',
+//     fontSize: '16px',
+//     marginLeft: '13%',
+//     marginRight: '13%'
+//   },
+//   dividerInset: {
+//     margin: `15px 0 0 ${theme.spacing(9)}px`,
+//   },
+// }));
 
 const styles = {
   link: {
@@ -48,108 +49,109 @@ const styles = {
 }
 
 export default function SubheaderDividers() {
-  const classes = useStyles();
+  // const classes = useStyles();
 
   return (
-    <List className={classes.root}>
-    <h2 className={classes.h2}>Portfolio Links:</h2>
+    <List id="bigList">
+      <h2 >Portfolio Links:</h2>
       <ListItem>
-        <Link href="//vital-sys.s3-website.us-east-2.amazonaws.com/">
-          <a>
+  
+          <a href="//vital-sys.s3-website.us-east-2.amazonaws.com/">
         
               VitalSys: A Chaos Tutorial and Demo App
           
           </a>
-        </Link>
+     
      
 
       </ListItem>
 
       <Divider component="li" />
       <li>
-        <Typography
-          className={classes.dividerFullWidth}
-          color="textSecondary"
+        <div
+          className="dividerFullWidth"
+          
+         
           display="block"
           variant="caption"
         >
    
           Technologies Used: Angular/Typescript, Express, AWS, Docker, PM2, A-Frame, Rita.js, PostgresSQL   
-        </Typography>
+        </div>
       </li>
 
 
 
 
       <ListItem>
-        <Link href="//prax-space.com">
-              <a>
+    
+              <a href="//prax-space.com">
             
                   Prax: A Tool for Remote Musicians
             
               </a>
-            </Link> 
+         
 
         </ListItem>
       <Divider component="li" variant="inset" />
         <li>
-          <Typography
-            className={classes.dividerFullWidth}
-            color="textSecondary"
+          <div
+          className="dividerFullWidth"
+            
             display="block"
             variant="caption"
           >
           Technologies Used: React, Express, SQL, WebRTC, Sockets, Firestore/Firebase, Web Audio API
     
-          </Typography>
+          </div>
         </li>
       
       
         <ListItem>
-          <Link style={styles.link} href="//project-2-spotify.herokuapp.com/">
-            <a>
+        
+            <a style={styles.link} href="//project-2-spotify.herokuapp.com/">
             
               Spotify Genre Map: Track Listeners Worldwide
    
             </a>
-          </Link>
+       
         </ListItem>
         
         <Divider component="li" />
         <li>
-          <Typography
-        className={classes.dividerFullWidth}
-        color="textSecondary"
+          <div
+          className="dividerFullWidth"
+       
         display="block"
         variant="caption"
       >
       Technologies Used: HTML/CSS/Javascript/JQuery, Express, SQL, Mapbox, Heroku  
 
-      </Typography>
+      </div>
       
     </li>
   
 
       <ListItem>
-      <Link href="//slidecast2019.web.app/">
-      <a>
+ 
+      <a href="//slidecast2019.web.app/">
      
           SlideCast: Voice-Activated Presentations
      
       </a>
-    </Link>
+
     </ListItem>
     <Divider component="li" />
     <li>
-      <Typography
-        className={classes.dividerFullWidth}
-        color="textSecondary"
+      <div
+        className="dividerFullWidth"
+      
         display="block"
         variant="caption"
       >
       Technologies Used: React/Redux, Google Speech-to-Text API
 
-      </Typography>
+      </div>
     </li>
   
  

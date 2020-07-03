@@ -9,22 +9,12 @@ color: "#aaf";
   background-color: #212121;
   }
 
-.webDev {
-  margin-right: 10%;
-  margin-left: 10%;
-
- 
-  
-  background-color: #212121;
-
+.dividerFullWidth {
+  color: #eed55b;
+  font-size: 16px;
+  margin-left: 13%;
+  margin-right: 13%;
 }
-.webDev2 {
-  margin-right: 7%;
-  margin-left: 2%;
-
-  background-color: #212121;
-}
-
 
 .__next {
   color: "#aaf";
@@ -32,14 +22,14 @@ color: "#aaf";
 }
   
 h1 {
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-  'Arial', sans-serif;
-  font-size: 42px;
+  /* font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+  'Arial', sans-serif; */
+  font-size: 64px;
   width: 100%;
 
-  background-image: linear-gradient(to right, #36bbc7, #148aa3);
+
   text-align: center;
-  color: #030303;
+  /* color: #212121; */
 }
 
 h2 {
@@ -56,7 +46,7 @@ h3 {
   'Arial', sans-serif;
   font-size: 16px;
   line-height: 1.3;
-  border: 2px solid #eed55b;
+
   width: 100%;
 padding: 4%;
   background-color: #212121;
@@ -87,15 +77,22 @@ p {
 
 
 .icon {
- padding:1vw;
-text-align: center;
-margin: 10px;
 
+text-align: center;
+padding: 25%;
+
+}
+
+#icons {
+margin-top: 15vh;
+  text-align: center;
 }
 
 
 .social-svg-mask > path {
+
   fill: #eed55b;
+
 }
 .social-svg-mask:hover > path {
   fill: #148aa3;
@@ -103,6 +100,7 @@ margin: 10px;
 
 #portfolioLinks {
   background-color: yellow;
+
 }
 
 #shortBio {
@@ -117,12 +115,7 @@ margin: 10px;
 
   }
 
-#footer {
-margin-right: 20%;
-margin-left: 20%;
-padding-right: 13%;
-padding-left: 13%;
-}
+
 
   a {
     text-decoration: none;
@@ -131,8 +124,8 @@ padding-left: 13%;
    color: #f6f6f6;
     font-family: 'Helvetica';
     background-color: #212121;
-    padding-right: 1%;
-    padding-left: 1%;
+    /* padding-right: 1%;
+    padding-left: 1%; */
     /* border: 2px solid #ee7e5b;  */
   }
 
@@ -141,7 +134,7 @@ padding-left: 13%;
     }
 
 
- 
+
 
   .photo{
     float: right;
@@ -150,9 +143,55 @@ padding-left: 13%;
   }
 
   #photoContainer{
-    width: 100%;
-    float: right;
+    width: 50%;
+    float: center;
   
     background-color: #148aa3;
   }
+  .footer {
+    padding-right: 10%;
+    width: 80%;
+    padding-left: 10%;
+    /* margin-right: 10%;
+    margin-left: 10%; */
+  } 
 
+  #header {
+    background-color: #148aa3;
+  }
+
+
+  .webDev {
+    margin-right: 20%;
+    margin-left: 20%;
+    color: #eed55b;
+   
+    
+    background-color: #212121;
+  
+  }
+  .webDev2 {
+    margin-right: 14%;
+    margin-left: 4%;
+  color: #eed55b;
+    background-color: #212121;
+  }
+
+  #bigList {
+    width: 100%;
+    max-width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-style: solid;
+    border-color: #ee7e5b;
+    background-color: #212121;
+    color: #f6f6f6;
+    font-size: 26px;
+  }
+  .MuiGrid {
+    padding: 0;
+  }
+  @media only screen 
+and (max-device-width: 667px){
+
+}

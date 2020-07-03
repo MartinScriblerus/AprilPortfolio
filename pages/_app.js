@@ -1,4 +1,4 @@
-import '../static/styles.css'
+import '../public/static/styles.css'
 
 
 
