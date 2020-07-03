@@ -1,146 +1,94 @@
-import Layout from './components/MyLayout';
-
-import useSWR from 'swr';
-import BottomNavigation from '@material-ui/core/BottomNavigation';
-import MyAppStyles from './_app'
 
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+// import { makeStyles } from '@material-ui/core/styles';
+import Link from 'next/link';
+import SubheaderDividers from './components/MyLayout';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
+import { SocialIcon } from 'react-social-icons';
+import Image from 'material-ui-image';
+import { StylesProvider } from '@material-ui/core';
 
-import Typography from '@material-ui/core/Typography';
-import ButtonBase from '@material-ui/core/ButtonBase';
-import styled from 'styled-components';
-import Container from '@material-ui/core/Container';
-import Header from './components/Header';
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     flexGrow: 1,
+//     color:'#ee7e5b',
+//     backgroundColor:'#ee7e5b',
+//   },
+//   paper: {
+//     padding: theme.spacing(2),
+//     textAlign: 'center',
+//     color: '#ee7e5b',
+//     backgroundColor:'#ee7e5b',
+//   },
+// }));
 
-import PropTypes from 'prop-types';
-
-
-
-const drawerWidth = 240;
-
-const imageStyle = {
-  width:940,
-  paddingLeft: 20,
-  float: "right",
-  marginRight: 0,
-  // marginLeft: 310
-};
-
-
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    // marginLeft: 120,
-    backgroundColor: "#aaf",
-    width:'70%'
-  },
-
-  title: {
-    marginLeft: 10
-  },
-  qtn: {
-    marginLeft: 10
-  },
-  img: {
-    margin: 'auto',
-    display: 'inline',
-    width: '100%',
-    maxHeight: '100%',
-  },
-  footer :{
-    backgroundColor: '#aaf0d1',
-    color: '#aaf0d1',
-    display: 'flex',
-    position: 'absolute',
-    bottom: 0,
-    width: '100vw'
-  },
-  MuiBottomNavigation: {
-    backgroundColor: '#aaf',
-    color: '#aaf0d1',
-  },
-  drawer: {
-    [theme.breakpoints.up('sm')]: {
-      width: drawerWidth,
-      flexShrink: 0,
-    },
-  },
-  appBar: {
-    [theme.breakpoints.up('sm')]: {
-      width: `calc(100% - ${drawerWidth}px)`,
-      marginLeft: drawerWidth,
-    },
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-    [theme.breakpoints.up('sm')]: {
-      display: 'none',
-    },
-  },
-  // necessary for content to be below app bar
-  toolbar: theme.mixins.toolbar,
-  drawerPaper: {
-    width: drawerWidth,
-  },
-  content: {
-    flexGrow: 1,
-    padding: theme.spacing(3),
+const styles = {
+  link: {
+    backgroundColor: '#212121',
    
-  },
-
-}),
-
-);
-
-
+  }
+}
 
 export default function Blog() {
-    const classes = useStyles();
-
-
+  // const classes = useStyles();
 
   return (
-  
-    <div className="shiftdiv">
-     
-      <Typography variant="h2">Matt Reilly</Typography>
-     
-      <Layout>
-    <div>
  
-    <div>
-   
-    <h4 
-    className="bio"> I'm a writer, web developer, teacher, and musician from Austin, TX.</h4>    
- 
-    <video
-    autoPlay
-    muted
-    loop
-    style={{
-      position: "relative",
-      transition: "opacity, 2s ease-in-out",
-      width: "100%",
-      height: "80vh",
-      left: 0,
-      top: 0,
-      bottom: 0,
-      opacity: .6,
-      filter: .8
-    }}
-  >
-    <source src="./PraxGreen.mp4" type="video/mp4" />
-  </video>
-    </div>
-    </div>
-      </Layout>
- <div>
+      <Grid container spacing={3}>
+        <Grid item xs={12}>
+          <Paper id="titlePaper"><h1>Matt Reilly</h1></Paper>
+       
 
-      </div>
-  
- 
-      </div> 
-      
-      );
+
+     
+
+        </Grid>
+   
+        <Grid item xs={8}>
+          <Paper className="webDev"><h3>Full Stack Web Developer with a B.A. in English from Haverford College and a PhD in English from UT Austin.</h3></Paper>
+         <Paper className="webDev2"><h3>Skills include: HTML5, CSS3, Javascript, JQuery, Node, MySQL, Postgres, Mongo, APIs, Angular, React, Redux, React-Native, Next, GraphQL, Docker, AWS, Google Cloud, Unity, Python.</h3></Paper>
+          </Grid>
+        <Grid item xs={4}>
+        <Image 
+        className="photo"
+        src="../static/reilly_portfolio.png"
+      />
+        </Grid>
+
+
+        <SubheaderDividers/>
+
+
+      <Grid id="footer" item xs={12}>
+      <SocialIcon className="icon" url="https://www.linkedin.com/in/matthew-reilly-91b316142/"/>
+      <SocialIcon className="icon" url="https://twitter.com/A00PE"/>
+      <SocialIcon className="icon" url="https://github.com/MartinScriblerus"/>
+      </Grid>
+</Grid>
+  );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

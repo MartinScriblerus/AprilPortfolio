@@ -6,12 +6,25 @@ color: "#aaf";
     height: '100vm';
     margin: 0 auto;
     color: "#aaf";
- 
+  background-color: #212121;
   }
 
-  p {
-width: 50%;
-  }
+.webDev {
+  margin-right: 10%;
+  margin-left: 10%;
+
+ 
+  
+  background-color: #212121;
+
+}
+.webDev2 {
+  margin-right: 7%;
+  margin-left: 2%;
+
+  background-color: #212121;
+}
+
 
 .__next {
   color: "#aaf";
@@ -21,197 +34,125 @@ width: 50%;
 h1 {
   font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
   'Arial', sans-serif;
-  font-size: 24px;
-  width: 60%;
-  margin-right: 30px;
-  background-color: "#aaf"
+  font-size: 42px;
+  width: 100%;
+
+  background-image: linear-gradient(to right, #36bbc7, #148aa3);
+  text-align: center;
+  color: #030303;
 }
 
-  .sidenav {
-    height: 100%;
-    width: 400;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    padding-right: 20px;
-    padding-left: 10px;
-   background-color: #0d0d0d;
-
-    overflow-x: hidden;
- 
-    /* border-right: 2px solid #8AB5B3; */
-  }
-
-.socialIcon {
-  height:0;
-  width: 10;
-  margin-right: 10px;
-  margin-left: 10px; 
+h2 {
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+  'Arial', sans-serif;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
 
 }
 
-  .sidenav a {
-    margin-top: 50px;
-    padding: 10px 0px 0px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #aaf;
-    display: flex;
-  }
+h3 {
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+  'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  border: 2px solid #eed55b;
+  width: 100%;
+padding: 4%;
+  background-color: #212121;
+  color: #f6f6f6;
+
+}
+
+h4 {
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+  'Arial', sans-serif;
+  font-size: 22px;
+  width: 100%;
+  color: "#aaf"
+}
+
+p {
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+  'Arial', sans-serif;
+  font-size: 18px;
+  width: 100%;
+  color: "#aaf"
+}
+
+
+
+
+
+
+
+.icon {
+ padding:1vw;
+text-align: center;
+margin: 10px;
+
+}
+
+
+.social-svg-mask > path {
+  fill: #eed55b;
+}
+.social-svg-mask:hover > path {
+  fill: #148aa3;
+}
+
+#portfolioLinks {
+  background-color: yellow;
+}
+
+#shortBio {
+  background-color: green;
+  /* width: 30%; */
+}
+
+
 
   li {
     list-style: none;
-   
 
   }
 
+#footer {
+margin-right: 20%;
+margin-left: 20%;
+padding-right: 13%;
+padding-left: 13%;
+}
+
   a {
     text-decoration: none;
+   font-size: 26px;
 
+   color: #f6f6f6;
     font-family: 'Helvetica';
+    background-color: #212121;
+    padding-right: 1%;
+    padding-left: 1%;
+    /* border: 2px solid #ee7e5b;  */
   }
 
   a:hover {
     opacity: 0.6;
-
-
-
     }
 
 
+ 
 
-
-  .shiftdivabout {
-    width:50%;
-   color: #030303;
-    margin-left: 10%;
-    line-height: 1.5;
-    color: "#aaf"
-  }
-  .shiftdivresearch {
-    width: 50%;
-
-    margin-left: 10%;
-    line-height: 1.5;
-  }
-  .shiftdivdevelopment {
-    width:70%;
-
-    line-height: 1.5;
-  }
-  .bio {
-    padding: 20px;
-    margin-top: 0px;
-    margin-right: 10px;
-    font-size: 26px;
-    color: #1E2732;
-    width: 30%
-  }
-  h4 {
-    padding: 20px;
-  } 
   .photo{
     float: right;
-    margin-top: 10px;
+    object-fit: cover;
+    background-color: #148aa3;
+  }
+
+  #photoContainer{
     width: 100%;
-  }
-
-
-
-  /* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 400px) {
-  .shiftdiv {
-    background-color: #aaf0d1;
-    color: #1e2732;
-    background-color: "#aaf"
-  };
-  h1 {
-    width: 70%;
-    font-size: 18px
-  }
-  .miniBio {
-    color: #aaf;
-    background-color: "#aaf"
-  }
-
- .bio {
-   font-size: 18px;
-   padding-left: 30px;
-   width: 40%;
-   margin-left: 15px;
- };
- .photo {
-  size: 800px;
-  margin-top: 30px;
- };
- .sidenav a {
-  padding: 50px 0px 0px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #aaf;
-  display: flex;
-}
-
-}
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 800px) {
+    float: right;
   
-  .shiftdiv {
-   color: #aaf0d1;
-   background-color: "#aaf";
-    font-size: 18px;
-    width:100%
-  };
-  .shiftdivabout {
-    background-color:   #aaf0d1;
-
-  };
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .shiftdiv {
-    background-color: #aaf0d1;
-    color: #aaf0d1;
-    color: #1e2732;
-    font-size: 18px
-  };
-  .shiftdivabout {
-    background-color:   #aaf0d1;
-
-    color: #1E2732;
-  };
-  .sidena a {
-    background-color: "#aaf0d1"
+    background-color: #148aa3;
   }
-} 
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .shiftdiv {
-    background-color: #aaf0d1;
-    color: #1E2732;
-  };
-  .shiftdivabout {
-    background-color:   #aaf0d1;
-    color: #1E2732;
-  };
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .shiftdiv {
-    background-color: #aaf0d1;
-    color: #1E2732;
-  };
-  .shiftdivabout {
-    background-color:   #aaf0d1;
-    color: #1E2732;
-  };
-  .publications {
-    padding: 2
-  }
-}

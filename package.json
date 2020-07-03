@@ -22,8 +22,11 @@
   "dependencies": {
     "@material-ui/core": "^4.9.9",
     "@material-ui/icons": "^4.9.1",
+    "@react-spring/three": "^9.0.0-rc.3",
     "@zeit/next-css": "^1.0.1",
     "isomorphic-unfetch": "^3.0.0",
+    "jimp": "^0.14.0",
+    "material-components-web": "^7.0.0",
     "material-ui-icons": "^1.0.0-beta.36",
     "material-ui-image": "^3.2.3",
     "next": "^9.3.4",
@@ -34,8 +37,10 @@
     "react-dom": "^16.13.1",
     "react-markdown": "^4.3.1",
     "react-social-icons": "^4.1.0",
+    "react-three-fiber": "^4.2.12",
     "semantic-ui-react": "^0.88.2",
     "styled-components": "^5.1.0",
-    "swr": "^0.2.0"
+    "swr": "^0.2.0",
+    "three": "^0.118.3"
   }
 }
