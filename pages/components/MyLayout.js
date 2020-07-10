@@ -103,10 +103,10 @@ export default function SubheaderDividers() {
       <CardActionArea>
         <CardMedia
           component="img"
-          alt="Contemplative Reptile"
+          alt="VitalSys"
           width= "100%"
           image="/static/VitalSysImg.png"
-          title="Contemplative Reptile"
+          title="VitalSys"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -156,9 +156,9 @@ This site uses containerization and service-oriented architecture to create syst
           loop={true}
           component="video"
           height="100%"
-          alt="PraxVid"
+          alt="Prax"
           image="/static/PraxVid.mp4"
-          title="Contemplative Reptile"
+          title="Prax"
           controls
         />
         <CardContent>
@@ -198,10 +198,10 @@ This site uses containerization and service-oriented architecture to create syst
           autoPlay={true}
           loop={true}
           component="video"
-          alt="PraxVid"
+          alt="Spotify Genre Map"
           width= "100%"
           image="/static/SpotifyGenreMapVid.mp4"
-          title="Contemplative Reptile"
+          title="Spotify Genre Map"
           controls
           />
           <CardContent>
@@ -247,10 +247,10 @@ This site uses containerization and service-oriented architecture to create syst
     <CardActionArea>
       <CardMedia
         component="img"
-        alt="Contemplative Reptile"
+        alt="SlideCast"
         width= "100%"
         image="/static/SlidecastImage.png"
-        title="Contemplative Reptile"
+        title="SlideCast"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="h2">
