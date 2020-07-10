@@ -28,6 +28,7 @@ export default function Blog() {
     
       <Grid id="header" item xs={5}>
           <Image 
+          alt="Matthew Reilly"
           className="photo"
           src="../static/reilly_portfolio.png"
         />
@@ -35,6 +36,8 @@ export default function Blog() {
 
       <Grid id="header" item xs={7}>
     <h1>Matt Reilly</h1>
+    <Paper className="webDev3"><h3>contact: matthewfreilly@gmail.com</h3></Paper>
+ 
     <Paper className="webDev"><h3>Web Developer from Austin, TX with a PhD in English from UT Austin.</h3></Paper>
     <Paper className="webDev2"><h3>Skills include: Javascript, React, Redux, React-Native, Next, Angular, Typescript, Node, Express, Python, Rest APIs, HTTP, WebScraping, WebRTC, TCP/UDP, A/V/Data Streaming, Networking, WebGL, NLTK, MySQL, Postgres, AWS, Mongo, NoSQL, GCloud, Kubernetes and Docker, Flask, Django, CSS3, Sass, HTML5, Git, JQuery, Microservices, GraphQL, Linux, Unity, Agile.</h3></Paper>
 
