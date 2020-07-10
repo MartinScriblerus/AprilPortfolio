@@ -40,7 +40,7 @@ export default function Blog() {
 
       </Grid>
 
-
+  
 
   
       <Grid id="leftGrid" item xs={12}>

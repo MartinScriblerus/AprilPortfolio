@@ -70,9 +70,10 @@ p {
   color: "#aaf"
 }
 
-
-
-
+.vitalsysphoto {
+  float: center;
+  object-fit: cover;
+}
 
 
 
