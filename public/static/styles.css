@@ -9,6 +9,20 @@ color: "#aaf";
   background-color: #212121;
   }
 
+.MuiCardContent-root {
+  background-color: #212121;
+  color: #f6f6f6;
+}
+
+.MuiCardActions-root {
+  background-color: #333;
+}
+
+.MuiButton-label {
+  color: #eed55b;
+}
+
+
 .dividerFullWidth {
   color: #eed55b;
   font-size: 16px;
@@ -38,7 +52,7 @@ h2 {
   font-size: 22px;
   text-align: center;
   width: 100%;
-
+  color: #148aa3;
 }
 
 h3 {
@@ -105,7 +119,7 @@ margin-top: 15vh;
 }
 
 #shortBio {
-  background-color: green;
+  background-color: #148aa3;
   /* width: 30%; */
 }
 
@@ -184,7 +198,7 @@ margin-top: 15vh;
     margin-right: 10%;
     margin-left: 10%;
     border-style: solid;
-    border-color: #ee7e5b;
+    border-color: #333;
     background-color: #212121;
     color: #f6f6f6;
     font-size: 26px;

@@ -112,12 +112,12 @@ export default function SubheaderDividers() {
           <Typography gutterBottom variant="h5" component="h2">
             VitalSys
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2"  component="p">
        
           A system and tutorial demonstrating the capabilities of chaos engineering. While it may sound like a frightening concept, chaos engineering is actually a constructive, commonly used practice that originated at Netflix and has been adopted by companies like Microsoft, Facebook, and Visa. The chaos engineer causes controlled failures to test the vulnerabilities and weaknesses of a complex, distributed system. They make the system resilient enough to withstand network outages that are inevitable in cloud-based deployments with many moving parts and interdependencies.
          
        
-This site uses Docker containers and AWS service-oriented architecture to construct a system that rebuilds itself when you break it. We've encased a flock of paper planes in a VR canvas and provided a button that causes random destruction in this canvas. Each paper plane is actually a clone of our 'litbot' service, which is designed to output a Markov Chain-generated text (based on John Milton's depictions of Chaos in Paradise Lost) at the moment a plane goes down. The flock of circling planes visualizes our system of litbot services, which will replenish its number after destruction and thus remain up-and-running in spite of temporary chaos.
+This site uses containerization and service-oriented architecture to create system that rebuilds itself when you break it. We've encased a flock of paper planes in a VR canvas and provided a button that causes random destruction in this canvas. Each paper plane is actually a clone of our 'litbot' service, which is designed to output a Markov Chain-generated text (based on John Milton's depictions of Chaos in Paradise Lost) at the moment a plane goes down. The flock of circling planes visualizes our system of litbot services, which will replenish its number after destruction and stay up-and-running in spite of temporary chaos.
       
    
           Technologies Used: Angular/Typescript, Express, AWS, Docker, PM2, A-Frame, Rita.js, PostgresSQL   
@@ -152,10 +152,12 @@ This site uses Docker containers and AWS service-oriented architecture to constr
       <Card >
       <CardActionArea>
         <CardMedia
+          autoPlay={true}
+          loop={true}
           component="video"
           height="100%"
           alt="PraxVid"
-          video="/static/PraxVid.mp4"
+          image="/static/PraxVid.mp4"
           title="Contemplative Reptile"
           controls
         />
@@ -163,8 +165,8 @@ This site uses Docker containers and AWS service-oriented architecture to constr
           <Typography gutterBottom variant="h5" component="h2">
             Prax
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-          This is a minimal implementation of a WebRTC audio/video connection. The project is already functional but will be receiving updates over the coming months. See the deployed site at prax-space.com
+          <Typography variant="body2"  component="p">
+          This is a minimal implementation of a WebRTC audio/video connection. The audio/video stream works along with the latency-based metronome, but I will be updating this project over the coming months. The existing GitHub repository contains additional code for a computer-vision animated overlay with Tensorflow Posenet computer vision, as well as tools for pitch detection and remote synchronization. See the deployed site at prax-space.com
           Technologies Used: React, Express, SQL, WebRTC, Sockets, Firestore/Firebase, Web Audio API
     
           </Typography>
@@ -193,7 +195,8 @@ This site uses Docker containers and AWS service-oriented architecture to constr
         <Card >
         <CardActionArea>
           <CardMedia
-        
+          autoPlay={true}
+          loop={true}
           component="video"
           alt="PraxVid"
           width= "100%"
@@ -205,7 +208,7 @@ This site uses Docker containers and AWS service-oriented architecture to constr
             <Typography gutterBottom variant="h5" component="h2">
               Spotify Genre Map
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
+            <Typography variant="body2"  component="p">
             Four person collaboration that scrapes and maps Spotify's global listener data. Visualizes the top fifty cities for each of Spotify's 3,000 microgenres. Supplements Spotify by providing much-needed localization and genre-based data, which may be helpful for musicians planning a tour or marketers incorporating music into a regional campaign. Devised concept, implemented mapping functionality, and captured backend genre and geo data on the front end.
             Technologies Used: HTML/CSS/Javascript/JQuery, Express, SQL, Mapbox, Heroku  
 
@@ -253,7 +256,7 @@ This site uses Docker containers and AWS service-oriented architecture to constr
         <Typography gutterBottom variant="h5" component="h2">
           SlideCast
         </Typography>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography variant="body2" component="p">
         Slidecast is a collaborative project that enables customizable voice control of Google Slides. The site not only aims to free public speakers from distracting clicking and confinement behind a computer, but it also opens the possibility for non-linear, voice-responsive slide changes. After signing in with Google authentication and granting access to their computer's microphone, a user may either build out their presentation by importing an existing Google Slideshow, or they may create a new Slideshow with images sourced from the Met's extensive API. After importing images, the user may attach keywords to invoke individual slides with their voice.
         Technologies Used: React/Redux, Google Speech-to-Text API
 
@@ -277,8 +280,7 @@ This site uses Docker containers and AWS service-oriented architecture to constr
    
   
 
-   
-
+    
 
 
 
